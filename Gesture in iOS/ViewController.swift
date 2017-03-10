@@ -46,22 +46,49 @@ class ViewController: UIViewController {
             SwipeGestureRecognizer.numberOfTouchesRequired = 1
             vwdemo.addGestureRecognizer(SwipeGestureRecognizer)
             
+        case "UIPanGestureRecognizer":
             
+            let PanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(pan));
+            
+            PanGestureRecognizer.maximumNumberOfTouches = 3
+            PanGestureRecognizer.minimumNumberOfTouches = 1
+            
+            vwdemo.addGestureRecognizer(PanGestureRecognizer)
+
+        case "UIScreenEdgePanGestureRecognizer" :
+            
+            let ScreenEdgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screen))
+            ScreenEdgePanGestureRecognizer.edges = UIRectEdge.right
+            vwdemo.addGestureRecognizer(ScreenEdgePanGestureRecognizer)
+
         default:
-        print("defalut")
+            
+            //UILongPressGestureRecognizer
+            let LongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longGesture))
+
+            LongPressGestureRecognizer.minimumPressDuration = 2
+            //solo para mantenerlo presionado...
+            LongPressGestureRecognizer.numberOfTapsRequired = 0
+            LongPressGestureRecognizer.numberOfTouchesRequired = 1
+            
+            vwdemo.addGestureRecognizer(LongPressGestureRecognizer)
         }
         
     
-        //
-        //
-        //UIPanGestureRecognizer
-        //UIScreenEdgePanGestureRecognizer
-        //UILongPressGestureRecognizer
-     
-        print(tipo)
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func longGesture(){
+        print("LongPressGestureRecognizer")
+    }
+    
+    
+    func screen(){
+        print("screenEdgePan")
+    }
+    
+    func pan(sender : UIPanGestureRecognizer){
+        
+    }
     
     func swipe(){
         print("swipe")
