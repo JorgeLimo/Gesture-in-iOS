@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubx-Gg-43y">
-                                <frame key="frameInset" minX="67" minY="219" width="240" height="128"/>
+                                <frame key="frameInset" minX="45" minY="170" width="240" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3827061108" green="0.84248840940000003" blue="0.95492632769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
