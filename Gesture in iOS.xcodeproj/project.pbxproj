@@ -12,6 +12,7 @@
 		FBD7E8AE1E722797006ED4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E8AC1E722797006ED4F4 /* Main.storyboard */; };
 		FBD7E8B01E722797006ED4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E8AF1E722797006ED4F4 /* Assets.xcassets */; };
 		FBD7E8B31E722797006ED4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD7E8B11E722797006ED4F4 /* LaunchScreen.storyboard */; };
+		FBD7E8BB1E722E84006ED4F4 /* ListadoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD7E8BA1E722E84006ED4F4 /* ListadoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FBD7E8AF1E722797006ED4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD7E8B21E722797006ED4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBD7E8B41E722797006ED4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD7E8BA1E722E84006ED4F4 /* ListadoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD7E8A81E722797006ED4F4 /* AppDelegate.swift */,
+				FBD7E8BA1E722E84006ED4F4 /* ListadoTableViewController.swift */,
 				FBD7E8AA1E722797006ED4F4 /* ViewController.swift */,
 				FBD7E8AC1E722797006ED4F4 /* Main.storyboard */,
 				FBD7E8AF1E722797006ED4F4 /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					FBD7E8A41E722797006ED4F4 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P9PVR449G4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD7E8BB1E722E84006ED4F4 /* ListadoTableViewController.swift in Sources */,
 				FBD7E8AB1E722797006ED4F4 /* ViewController.swift in Sources */,
 				FBD7E8A91E722797006ED4F4 /* AppDelegate.swift in Sources */,
 			);
@@ -260,9 +265,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P9PVR449G4;
 				INFOPLIST_FILE = "Gesture in iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pe.ourlimm.Gesture-in-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.ourlimm.Gesturedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +280,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P9PVR449G4;
 				INFOPLIST_FILE = "Gesture in iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pe.ourlimm.Gesture-in-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.ourlimm.Gesturedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
